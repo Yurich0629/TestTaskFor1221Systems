@@ -1,0 +1,1 @@
+Layout of the product card screen of the My Spar application, without reference to data, navigation, etc.; Layout is performed only using SwiftUI. Designed specifically as a test task for 1221 systems.
