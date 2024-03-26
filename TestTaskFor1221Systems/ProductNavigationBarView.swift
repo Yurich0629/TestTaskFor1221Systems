@@ -14,41 +14,16 @@ struct NavigationBarView<Content: View >: View {
         VStack {
             VStack {
                 HStack {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "arrowshape.left.fill")
-                            .font(.title)
-                            .foregroundColor(.green)
-                            
-                    }
+                    NavigationButton(navButton: .arrowLeft) {}
                     
                     Spacer()
                     
                     HStack {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "list.bullet.rectangle.portrait.fill")
-                                .font(.title)
-                                .foregroundColor(.green)
-                        }
+                        NavigationButton(navButton: .bullet) {}
                         
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "arrowshape.up.fill")
-                                .font(.title)
-                                .foregroundColor(.green)
-                        }
+                        NavigationButton(navButton: .arrowUp) {}
                         
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "heart.fill")
-                                .font(.title)
-                                .foregroundColor(.green)
-                        }
+                        NavigationButton(navButton: .heart) {}
                     }
                 }
                 .padding()
